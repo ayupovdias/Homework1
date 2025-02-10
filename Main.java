@@ -1,0 +1,58 @@
+public class Main{
+    public static void main(String[] args){
+        AttackerImpl hero=new AttackerImpl("Knight", "Warrior",103,29);
+        SupportImpl hero0=new SupportImpl("Goblin","Healer",89,21);
+        AttackerImpl hero1=new AttackerImpl("Shooter","Archer",86,25);
+        AttackerImpl hero2=new AttackerImpl("Magician","Wizard",83,30);
+        AttackerImpl hero3=new AttackerImpl("Barbarian","Warrior",74,18);
+        Team team=new Team();
+        team.addInTeam(hero);
+        team.addInTeam(hero1);
+        team.AllHeroesInTeam();System.out.println();
+        team.addInTeam(hero2);
+        team.addInTeam(hero0);
+        team.AllHeroesInTeam();
+        team.addInTeam(hero0);
+        System.out.println(hero0.heal(hero0));
+        System.out.println(hero.attacks(hero0));
+        System.out.println(hero2.attacks(hero1));
+        team.AllHeroesInTeam();
+        System.out.println(hero0.heal(hero));
+        team.AllHeroesInTeam();
+        System.out.println(hero.attacks(hero1));
+        System.out.println(hero.attacks(hero1));
+        System.out.println(hero0.heal(hero1));
+        System.out.println(hero1.attacks(hero0));
+        System.out.println(hero2.attacks(hero1));
+        team.AllHeroesInTeam();
+        System.out.println(hero.attacks(hero2));
+        System.out.println(hero0.heal(hero2));
+        team.AllHeroesInTeam();
+        System.out.println(hero0.heal(hero2));
+        team.AllHeroesInTeam();
+        System.out.println(hero0.heal(hero2));
+        team.AllHeroesInTeam();
+        System.out.println(hero.attacks(hero2));
+        System.out.println(hero.attacks(hero2));
+        System.out.println(hero.attacks(hero2));
+        team.AllHeroesInTeam();
+        System.out.println(hero3.attacks(hero));
+        System.out.println(hero3.attacks(hero));
+        team.AllHeroesInTeam();
+        System.out.println(hero0.heal(hero));
+        team.AllHeroesInTeam();
+        System.out.println(hero0.heal(hero));
+        team.AllHeroesInTeam();
+        System.out.println(hero0.heal(hero));
+        team.AllHeroesInTeam();
+        hero1.setAlive(true);
+        team.AllHeroesInTeam();
+        System.out.println(hero0.heal(hero1));
+        team.AllHeroesInTeam();
+        System.out.println(hero0.heal(hero1)+" "+hero0.heal(hero1));
+        team.AllHeroesInTeam();
+        System.out.println(hero0.heal(hero1));
+        team.AllHeroesInTeam();
+        System.out.println(hero0.heal(hero1));
+    }
+}
